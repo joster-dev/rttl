@@ -1,0 +1,17 @@
+.bg-forest {
+  background: url("/assets/john-prout-mountains-forest-river.jpg") no-repeat left center;
+  background-size: cover;
+  margin: 0;
+  color: white;
+
+  >div {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+
+iframe {
+  min-width: 400px;
+  min-height: 225px;
+}
