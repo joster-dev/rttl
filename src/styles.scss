@@ -40,3 +40,8 @@ button {
   border-radius: 0.5em;
   line-height: normal;
 }
+
+a+a,
+a+button {
+  margin-left: 0.25em;
+}
