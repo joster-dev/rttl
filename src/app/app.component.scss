@@ -3,6 +3,10 @@ footer {
   max-width: 900px;
   margin: 0.5em auto;
   padding: 0 0.5em;
+
+  @media (max-width: 628px) {
+    flex-direction: column;
+  }
 }
 
 nav {
@@ -12,7 +16,7 @@ nav {
 h1 {
   font-size: 2.5em;
   font-family: OldEurope;
-  margin: 0 0 0 0.5em;
+  margin: 0 0.5em;
 }
 
 img {
