@@ -26,8 +26,14 @@ section {
   justify-content: space-between;
 }
 
-a,
-button {
+a {
+  color: currentColor;
+}
+
+header a,
+footer a,
+header button,
+footer button {
   background-color: transparent;
   border: 1px solid currentColor;
   color: currentColor;
