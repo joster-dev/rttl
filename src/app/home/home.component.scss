@@ -1,18 +1,17 @@
 .bg-forest {
-  background: url("~src/assets/wide-woods.png") no-repeat left center;
+  // background: url("~src/assets/wide-woods.png") no-repeat left center;
   // background-image: url("assets/Screenshot 2023-09-26 200438.png"), linear-gradient(white 0%, transparent 100%);
   background-size: cover;
   margin: 0;
-  color: white;
+  // color: white;
 }
 
 section>div {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0.5em 0.5em;
+  padding: 2.5em 0.5em;
 
   @media (max-width: 628px) {
     flex-direction: column;
