@@ -1,29 +1,61 @@
-.bg-forest {
-  // background: url("~src/assets/wide-woods.png") no-repeat left center;
-  // background-image: url("assets/Screenshot 2023-09-26 200438.png"), linear-gradient(white 0%, transparent 100%);
-  background-size: cover;
-  // color: white;
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
-section>div {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2.5em 0;
+hr {
+  width: 75%;
+}
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+#main {
+  background: url("~src/assets/forest-with-tall-green-trees.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+
+  header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+
+  >.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5em;
+    font-family: Balgruf;
+    line-height: 1em;
   }
 }
 
+#about {
+  background: url("~src/assets/dark-forest-path.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
 
-iframe {
-  min-width: 400px;
-  min-height: 225px;
+  >.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+  }
+
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
 }
 
-
-.mleft {
-  margin-left: 1.5em;
-}
+// iframe {
+//   min-width: 400px;
+//   min-height: 225px;
+// }
