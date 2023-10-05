@@ -34,10 +34,61 @@ hr {
   }
 }
 
+#locations {
+  background-color: #222;
+  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .content {
+    line-height: 3em;
+
+    a {
+      margin-top: 2em;
+    }
+  }
+
+  img {
+    width: 400px;
+    height: 225px;
+    object-fit: contain;
+    border: 0.25em solid currentColor;
+    border-radius: 1em;
+  }
+
+  .image-container {
+    width: 400px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    >img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
 #about {
   background: url("~src/assets/dark-forest-path.jpg") no-repeat center center;
   background-size: cover;
   color: white;
+
+  h2 {
+    font-size: 3em;
+  }
 
   >.content {
     flex: 1;
@@ -45,13 +96,24 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 2em;
+    line-height: 3em;
   }
 
   footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 2em;
+
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+
+      >div:first-child {
+        margin-top: 2em;
+      }
+    }
   }
 }
 

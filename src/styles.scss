@@ -5,6 +5,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header,
+footer {
+  padding: 0 0.5em;
+}
+
 h1,
 h2,
 h3 {
@@ -17,18 +22,8 @@ h3 {
     url(assets/Balgruf.woff) format('woff');
 }
 
-@font-face {
-  font-family: OldEurope;
-  src: url(assets/OldEurope.ttf);
-}
-
+ol,
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-ol {
   margin: 0;
 }
 
@@ -48,10 +43,8 @@ a {
   color: currentColor;
 }
 
-header a,
-footer a,
-header button,
-footer button {
+a:not(.ignore),
+button {
   background-color: transparent;
   border: 1px solid currentColor;
   color: currentColor;
@@ -65,16 +58,17 @@ footer button {
   line-height: normal;
   font-weight: bold;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 0 0.25em 0.25em currentColor;
   }
 }
 
 a+a,
-a+button {
+a+button,
+button+button {
   margin-left: 0.5em;
 }
-
 
 .text-center {
   text-align: center;

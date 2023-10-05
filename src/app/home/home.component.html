@@ -3,12 +3,12 @@
     <header class="dis-flex flex-align-center flex-justify-between">
       <div></div>
       <nav>
-        <a href="#locations">
+        <button (click)="scroll('locations')">
           Location
-        </a>
-        <a href="#about">
+        </button>
+        <button (click)="scroll('about')">
           Membership
-        </a>
+        </button>
       </nav>
     </header>
   </div>
@@ -21,25 +21,33 @@
   </div>
 </section>
 <section id="locations">
-  <div>
+  <div class="content text-center">
     <h2>
-      RTTL Ozarks Chapter
+      Ozarks Location
     </h2>
+    <hr />
     <div>
-      <div class="dis-flex flex-justify-between">
-        <ul>
-          <li>🏡 No zoning laws</li>
-          <li>🔫 Permitless open carry</li>
-        </ul>
-        <ul class="mleft">
-          <li>💰 Affordable land</li>
-          <li>⛄ Mild winters</li>
-        </ul>
-      </div>
-      <ul>
-        <li>🏫 Relaxed homeschooling regulations</li>
-      </ul>
+      <div>North Central Arkansas</div>
+      <div>158 acres</div>
+      <div>~$2200 per acre</div>
     </div>
+    <div>
+      <a
+        href="assets/LLC-Operating-Agreement.pdf"
+        target="_blank"
+      >
+        LLC Operating Agreement
+      </a>
+    </div>
+  </div>
+  <div>
+    <img
+      [src]="images[imageIndex]"
+      alt="Ozarks Location"
+    >
+    <!-- <div class="image-container">
+
+    </div> -->
   </div>
 </section>
 <section id="about">
@@ -48,26 +56,27 @@
       <h2>Membership</h2>
       <hr />
       <div class="text-left">
-        <ol>
-          <li>
-            <a href="https://t.me/+b3VYbqF3cfNiNWE5">
-              Join and Introduce yourself on our Telegram
-            </a>
-          </li>
-          <li>
-            See the pinned questionnaire in Telegram and fill it out
-          </li>
-          <li>
-            After vetting and approval you can join a community
-          </li>
-        </ol>
+        <div>
+          <a
+            class="ignore"
+            href="https://t.me/+b3VYbqF3cfNiNWE5"
+          >
+            Join and Introduce yourself on our Telegram
+          </a>
+        </div>
+        <div>
+          See the pinned questionnaire in Telegram and fill it out
+        </div>
+        <div>
+          After vetting and approval you can join the community
+        </div>
       </div>
     </div>
   </div>
   <div>
-    <footer class="dis-flex flex-align-center flex-justify-between">
+    <footer>
       <div>
-        ©2023 Wisdom Woods LLC. All Rights Reserved.
+        ©2023 RTTL Ozarks Chapter. All Rights Reserved.
       </div>
       <div>
         <a href="https://www.guilded.gg/r/zzMlWZ7PLR?i=AQ0b0kZm">
@@ -91,7 +100,22 @@
 ></iframe> -->
 
 <!-- <ul>
-  <li>📜 Legally enforable bylaws</li>
-  <li>💵 Increased purchasing power with groups</li>
-  <li>🏛️ Intentional neighborhood, not a commune</li>
+  <div>📜 Legally enforable bylaws</div>
+  <div>💵 Increased purchasing power with groups</div>
+  <div>🏛️ Intentional neighborhood, not a commune</div>
+</ul> -->
+
+
+<!-- <div class="dis-flex flex-justify-between">
+  <ul>
+    <div>🏡 No zoning laws</div>
+    <div>🔫 Permitless open carry</div>
+  </ul>
+  <ul class="mleft">
+    <div>💰 Affordable land</div>
+    <div>⛄ Mild winters</div>
+  </ul>
+</div>
+<ul>
+  <div>🏫 Relaxed homeschooling regulations</div>
 </ul> -->
