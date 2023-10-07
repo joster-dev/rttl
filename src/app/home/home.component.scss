@@ -2,7 +2,8 @@ section {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: calc(100vw - 1em);
+  padding: 0 0.5em;
 }
 
 hr {
@@ -50,20 +51,25 @@ hr {
   }
 
   .content {
-    line-height: 3em;
-
     a {
       margin-top: 2em;
     }
+
+    .text>div {
+      padding: 1em 0;
+    }
   }
-
-
 
   .image-container {
     button {
       padding: 0;
-      width: 400px;
-      height: 225px;
+      height: 35vh;
+      width: 30vw;
+      overflow: hidden;
+
+      @media (max-width: 1000px) {
+        width: 80vw;
+      }
     }
 
     img {
@@ -78,6 +84,7 @@ hr {
     width: 100vw;
     text-align: center;
     border: 0;
+    padding: 0.5em;
     color: white;
 
     &::backdrop {
@@ -87,8 +94,8 @@ hr {
 
     >button {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 0.5em;
+      right: 0.5em;
       float: right;
     }
 
@@ -107,7 +114,7 @@ hr {
 
       >img {
         max-height: 80vh;
-        max-width: 75vw;
+        max-width: 80vw;
       }
     }
   }
@@ -143,7 +150,10 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 3em;
+
+    .text>div {
+      padding: 1em 0;
+    }
   }
 
   footer {
@@ -159,6 +169,7 @@ hr {
 
       >div:first-child {
         margin-top: 2em;
+        text-align: center;
       }
     }
   }
