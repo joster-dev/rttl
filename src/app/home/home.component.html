@@ -27,9 +27,9 @@
     </h2>
     <hr />
     <div>
-      <div>North Central Arkansas</div>
-      <div>158 acres</div>
-      <div>~$2200 per acre</div>
+      <div>~150 acres in Northern Arkansas</div>
+      <div>3 acre minimum at $2200 per acre</div>
+      <div>~30 acres remaining</div>
     </div>
     <div>
       <a
@@ -40,15 +40,45 @@
       </a>
     </div>
   </div>
-  <div>
-    <img
-      [src]="images[imageIndex]"
-      alt="Ozarks Location"
-    >
-    <!-- <div class="image-container">
-
-    </div> -->
+  <div class="image-container">
+    <button (click)="open(imageDialog)">
+      <img
+        *ngFor="let image of images"
+        [class.dis-none]="imageIndex !== images.indexOf(image)"
+        [src]="image"
+        alt="Ozarks Location"
+      >
+    </button>
   </div>
+  <dialog
+    #imageDialog
+    class="text-center"
+  >
+    <button
+      class="close"
+      (click)="close(imageDialog)"
+    >
+      Close
+    </button>
+    <div>
+      <div>
+        <button (click)="this.changeImageIndex(this.imageIndex - 1)">
+          Prev
+        </button>
+      </div>
+      <img
+        *ngFor="let image of images"
+        [class.dis-none]="imageIndex !== images.indexOf(image)"
+        [src]="image"
+        alt="Ozarks Location"
+      >
+      <div>
+        <button (click)="this.changeImageIndex(this.imageIndex + 1)">
+          Next
+        </button>
+      </div>
+    </div>
+  </dialog>
 </section>
 <section id="about">
   <div class="content">
