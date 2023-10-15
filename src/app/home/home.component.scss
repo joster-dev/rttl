@@ -19,6 +19,11 @@ hr {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 2em;
+
+    >nav {
+      display: flex;
+      align-items: center;
+    }
   }
 
   >.content {
@@ -26,6 +31,15 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    .text-center>div:last-child {
+      margin-top: 2em;
+
+      >span {
+        color: #FF3131;
+      }
+    }
   }
 
   h1 {
@@ -61,21 +75,31 @@ hr {
   }
 
   .image-container {
+    position: relative;
+
+    >img {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      width: 2em;
+      height: 2em;
+    }
+
     button {
       padding: 0;
       height: 35vh;
       width: 30vw;
       overflow: hidden;
 
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
       @media (max-width: 1000px) {
         width: 80vw;
       }
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
     }
   }
 
@@ -163,6 +187,11 @@ hr {
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 2em;
+
+    >div:last-child {
+      display: flex;
+      align-items: center;
+    }
 
     @media (max-width: 1000px) {
       flex-direction: column-reverse;
