@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OzarksComponent } from './ozarks.component';
+import { FooterComponent } from './footer.component';
 
-describe('OzarksComponent', () => {
-  let component: OzarksComponent;
-  let fixture: ComponentFixture<OzarksComponent>;
+describe('FooterComponent', () => {
+  let component: FooterComponent;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OzarksComponent]
+      declarations: [FooterComponent]
     });
-    fixture = TestBed.createComponent(OzarksComponent);
+    fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

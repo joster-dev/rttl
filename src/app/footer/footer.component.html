@@ -1,0 +1,25 @@
+<footer>
+  <div>
+    ©2023 RTTL Ozarks Chapter. All Rights Reserved.
+  </div>
+  <div>
+    <a href="https://www.guilded.gg/r/zzMlWZ7PLR?i=AQ0b0kZm">
+      Guilded
+    </a>
+    <a href="https://t.me/+b3VYbqF3cfNiNWE5">
+      Telegram
+    </a>
+    <a
+      *ngIf="isHome"
+      routerLink="/donate"
+    >
+      Donate
+    </a>
+    <a
+      *ngIf="!isHome"
+      routerLink="/home"
+    >
+      Home
+    </a>
+  </div>
+</footer>
