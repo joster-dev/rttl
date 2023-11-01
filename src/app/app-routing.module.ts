@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { OzarksComponent } from './ozarks/ozarks.component';
+import { DonateComponent } from './donate/donate.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'ozarks', component: OzarksComponent },
+  { path: 'donate', component: DonateComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' }
 ];

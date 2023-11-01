@@ -179,29 +179,6 @@ hr {
       padding: 1em 0;
     }
   }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-
-    >div:last-child {
-      display: flex;
-      align-items: center;
-    }
-
-    @media (max-width: 1000px) {
-      flex-direction: column-reverse;
-
-      >div:first-child {
-        margin-top: 2em;
-        text-align: center;
-      }
-    }
-  }
 }
 
 // iframe {

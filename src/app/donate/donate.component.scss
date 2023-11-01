@@ -1,0 +1,65 @@
+:host {
+  text-align: center;
+}
+
+section {
+  padding: 0 .5em;
+  background-color: #222;
+  color: white;
+  min-height: 100vh;
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2em;
+  text-align: right;
+}
+
+.image-container {
+
+  overflow: hidden;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  padding: 0.5em 0;
+}
+
+.content {
+
+  max-width: 1000px;
+  margin: 0 auto;
+
+  a {
+    height: 18em;
+    width: 25em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    >h2 {
+      padding: 0.5em 0;
+    }
+
+    .image-container {
+      flex: 1;
+
+      >img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  >div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}
