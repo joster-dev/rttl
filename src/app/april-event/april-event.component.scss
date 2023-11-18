@@ -1,0 +1,48 @@
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: calc(100vw - 1em);
+  padding: 0 0.5em;
+  background: url("~src/assets/april-event.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+
+  header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2em;
+
+    >nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  >.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    >div {
+      backdrop-filter: brightness(40%);
+      border: 0.25em double white;
+      border-radius: 0.5em;
+      padding: 1.5em;
+
+      >div {
+        padding-top: 1em;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5em;
+    font-family: Balgruf;
+    line-height: 1em;
+  }
+}
