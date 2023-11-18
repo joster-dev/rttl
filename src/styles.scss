@@ -53,6 +53,7 @@ button {
   border-radius: 0.5em;
   line-height: 1em;
   font-weight: bold;
+  backdrop-filter: brightness(60%);
 
   &:hover,
   &:focus {

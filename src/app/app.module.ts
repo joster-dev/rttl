@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
+import { AprilEventComponent } from './april-event/april-event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DonateComponent,
-    FooterComponent
+    FooterComponent,
+    AprilEventComponent
   ],
   imports: [
     BrowserModule,
