@@ -49,6 +49,24 @@ hr {
   }
 }
 
+#ozark-map {
+  background-color: #222;
+  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .image-container {
+    height: 35vh;
+    width: 30vw;
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 #locations {
   background-color: #222;
   color: white;
@@ -158,30 +176,3 @@ hr {
   //   }
   // }
 }
-
-#about {
-  background: url("~src/assets/dark-forest-path.jpg") no-repeat center center;
-  background-size: cover;
-  color: white;
-
-  h2 {
-    font-size: 3em;
-  }
-
-  >.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .text>div {
-      padding: 1em 0;
-    }
-  }
-}
-
-// iframe {
-//   min-width: 400px;
-//   min-height: 225px;
-// }
