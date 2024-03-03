@@ -21,13 +21,6 @@ export class HomeComponent implements OnInit {
     this.startImageInterval();
   }
 
-  scroll(id: string) {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
   open(element: HTMLDialogElement) {
     window.clearInterval(this.imageInterval);
     element.showModal();
