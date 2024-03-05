@@ -1,0 +1,28 @@
+<section id="main">
+  <div>
+    <header class="dis-flex flex-align-center flex-justify-between">
+      <div></div>
+      <nav>
+        <button (click)="scroll('locations')">
+          Location
+        </button>
+        <button (click)="scroll('about')">
+          Membership
+        </button>
+        <a routerLink="/donate">
+          Donate
+        </a>
+      </nav>
+    </header>
+  </div>
+  <div class="content">
+    <div class="text-center">
+      <h1>Return to the Land</h1>
+      <hr />
+      <h2>Private Membership Association</h2>
+      <div>
+        Currently (<span>1</span>) community has openings
+      </div>
+    </div>
+  </div>
+</section>

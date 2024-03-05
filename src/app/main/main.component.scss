@@ -1,0 +1,50 @@
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: calc(100vw - 1em);
+  padding: 0 0.5em;
+}
+
+hr {
+  width: 75%;
+}
+
+#main {
+  background: url("~src/assets/forest-with-tall-green-trees.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+
+  header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2em;
+
+    >nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  >.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .text-center>div:last-child {
+      margin-top: 2em;
+
+      >span {
+        color: #FF3131;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5em;
+    font-family: Balgruf;
+    line-height: 1em;
+  }
+}

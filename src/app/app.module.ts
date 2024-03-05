@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
 import { AprilEventComponent } from './april-event/april-event.component';
+import { AboutComponent } from './about/about.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AprilEventComponent } from './april-event/april-event.component';
     HomeComponent,
     DonateComponent,
     FooterComponent,
-    AprilEventComponent
+    AprilEventComponent,
+    AboutComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -1,156 +1,85 @@
-<section id="main">
-  <div>
-    <header class="dis-flex flex-align-center flex-justify-between">
-      <div></div>
-      <nav>
-        <button (click)="scroll('locations')">
-          Location
-        </button>
-        <button (click)="scroll('about')">
-          Membership
-        </button>
-        <a routerLink="/donate">
-          Donate
-        </a>
-      </nav>
-    </header>
-  </div>
-  <div class="content">
-    <div class="text-center">
-      <h1>Return to the Land</h1>
-      <hr />
-      <h2>Private Membership Association</h2>
-      <div>
-        Currently (<span>1</span>) community has openings
-      </div>
-    </div>
-  </div>
-</section>
+<rttl-main></rttl-main>
 <section id="locations">
-  <div class="content text-center">
-    <h2>
-      Ozarks Location
-    </h2>
-    <hr />
-    <div class="text">
-      <div>~150 acres in Northern Arkansas</div>
-      <div>3 acre minimum at $2200 per acre</div>
-      <div>~30 acres remaining</div>
-    </div>
-    <div>
-      <a
-        href="assets/LLC-Operating-Agreement.pdf"
-        target="_blank"
-      >
-        LLC Operating Agreement
-      </a>
-    </div>
-    <div>
-      <a routerLink="/april-event">
-        April 2024 Event
-      </a>
-    </div>
-  </div>
-  <div class="image-container">
-    <img
-      src="assets/search.svg"
-      alt="Search Icon"
-    >
-    <button (click)="open(imageDialog)">
-      <img
-        *ngFor="let image of images"
-        [class.dis-none]="imageIndex !== images.indexOf(image)"
-        [src]="image"
-        alt="Ozarks Location"
-      >
-    </button>
-  </div>
-  <dialog
-    #imageDialog
-    class="text-center"
-  >
-    <button
-      class="close"
-      (click)="close(imageDialog)"
-    >
-      Close
-    </button>
-    <div>
+  <div>
+    <div class="content text-center">
       <div>
-        <button (click)="this.changeImageIndex(this.imageIndex - 1)">
-          Prev
-        </button>
-      </div>
-      <img
-        *ngFor="let image of images"
-        [class.dis-none]="imageIndex !== images.indexOf(image)"
-        [src]="image"
-        alt="Ozarks Location"
-      >
-      <div>
-        <button (click)="this.changeImageIndex(this.imageIndex + 1)">
-          Next
-        </button>
-      </div>
-    </div>
-  </dialog>
-</section>
-<section id="about">
-  <div class="content">
-    <div class="text-center">
-      <h2>Membership</h2>
-      <hr />
-      <div class="text">
-        <div>
-          <a href="https://form.jotform.com/232545151398661">
-            1. Fill out the questionnaire
-          </a>
-        </div>
-        <div>
-          2. Follow the instructions in the email you receive, to get an interview
-        </div>
-        <div>
-          3. If approved, you will receive a Member Agreement via email 1-2 weeks afterwards
-        </div>
+        <h2>
+          Ozarks Location
+        </h2>
+        <hr />
         <div>
           <a
-            href="assets/RTTL-PMA.pdf"
+            href="assets/LLC-Operating-Agreement.pdf"
             target="_blank"
           >
-            PMA Articles of Association
+            LLC Operating Agreement
+          </a>
+        </div>
+        <div>
+          <a routerLink="/april-event">
+            April 2024 Event
           </a>
         </div>
       </div>
     </div>
+    <div>
+      <div class="image-container">
+        <img
+          src="assets/search.svg"
+          alt="Search Icon"
+        >
+        <button (click)="open(imageDialog)">
+          <img
+            *ngFor="let image of images"
+            [class.dis-none]="imageIndex !== images.indexOf(image)"
+            [src]="image"
+            alt="Ozarks Location"
+          >
+        </button>
+      </div>
+    </div>
   </div>
-  <div>
-    <rttl-footer></rttl-footer>
+  <div class="map-container">
+    <div>
+      <div>
+        <img
+          src="assets/photo_2024-02-06_19-36-24.jpg"
+          alt="Ozarks Map"
+        >
+      </div>
+      <small class="text">
+        These lots are tied to membership interest in our LLC. You can purchase a share of membership interest in the LLC to become a landowner/homesteader via the LLC. Contact us for pricing and payment plans. Lots without color are not available. Only PMA members may apply to purchase membership interest in the LLC.
+      </small>
+    </div>
   </div>
 </section>
-
-<!-- <iframe
-  src="https://odysee.com/$/embed/a-call-to-return-to-the-land/8b893bd01718ca2a5c707f1b7e760bf363335066"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-></iframe> -->
-
-<!-- <ul>
-  <div>📜 Legally enforable bylaws</div>
-  <div>💵 Increased purchasing power with groups</div>
-  <div>🏛️ Intentional neighborhood, not a commune</div>
-</ul> -->
-
-
-<!-- <div class="dis-flex flex-justify-between">
-  <ul>
-    <div>🏡 No zoning laws</div>
-    <div>🔫 Permitless open carry</div>
-  </ul>
-  <ul class="mleft">
-    <div>💰 Affordable land</div>
-    <div>⛄ Mild winters</div>
-  </ul>
-</div>
-<ul>
-  <div>🏫 Relaxed homeschooling regulations</div>
-</ul> -->
+<rttl-about></rttl-about>
+<dialog
+  #imageDialog
+  class="text-center"
+>
+  <button
+    class="close"
+    (click)="close(imageDialog)"
+  >
+    Close
+  </button>
+  <div>
+    <div>
+      <button (click)="this.changeImageIndex(this.imageIndex - 1)">
+        Prev
+      </button>
+    </div>
+    <img
+      *ngFor="let image of images"
+      [class.dis-none]="imageIndex !== images.indexOf(image)"
+      [src]="image"
+      alt="Ozarks Location"
+    >
+    <div>
+      <button (click)="this.changeImageIndex(this.imageIndex + 1)">
+        Next
+      </button>
+    </div>
+  </div>
+</dialog>
