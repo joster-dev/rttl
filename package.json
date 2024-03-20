@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pages": "ng build --output-path=docs --base-href=https://joster-dev.github.io/rttl/",
-    "site": "ng build --output-path=docs --base-href=https://www.returntotheland.org/"
+    "site": "ng build --output-path=docs --base-href ./"
   },
   "private": true,
   "dependencies": {
