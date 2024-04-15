@@ -7,7 +7,7 @@ import { AprilEventComponent } from './april-event/april-event.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'donate', component: DonateComponent },
-  { path: 'april-event', component: AprilEventComponent },
+  // { path: 'april-event', component: AprilEventComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' }
 ];
