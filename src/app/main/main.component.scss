@@ -6,6 +6,15 @@ section {
   padding: 0 0.5em;
 }
 
+header {
+  gap: 1em;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 hr {
   width: 75%;
 }
@@ -46,5 +55,46 @@ hr {
     font-size: 5em;
     font-family: Balgruf;
     line-height: 1em;
+  }
+}
+
+dialog {
+  border-color: white;
+  background: transparent;
+  backdrop-filter: brightness(10%);
+  padding: 2em;
+  color: white;
+  border-radius: 0.5em;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    label {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-top: 0.5em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        background: transparent;
+        color: white;
+        min-width: 200px;
+      }
+    }
+
+    >div {
+      text-align: right;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      >button {
+        margin-left: 0;
+      }
+    }
   }
 }

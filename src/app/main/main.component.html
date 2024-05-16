@@ -1,7 +1,6 @@
 <section id="main">
   <div>
     <header class="dis-flex flex-align-center flex-justify-between">
-      <div></div>
       <nav>
         <button (click)="scroll('locations')">
           Location
@@ -13,6 +12,24 @@
           Donate
         </a>
       </nav>
+      <div>
+        <ng-container *ngIf="!authService.isAuthenticated">
+          <button (click)="loginDialog.showModal()">
+            Login
+          </button>
+          <button (click)="signUpDialog.showModal()">
+            Sign Up
+          </button>
+        </ng-container>
+        <ng-container *ngIf="authService.isAuthenticated">
+          <a routerLink="/profile">
+            Profile
+          </a>
+          <button (click)="authService.isAuthenticated = false">
+            Sign Out
+          </button>
+        </ng-container>
+      </div>
     </header>
   </div>
   <div class="content">
@@ -26,3 +43,47 @@
     </div>
   </div>
 </section>
+<dialog #loginDialog>
+  <div>
+    <label>
+      Username
+      <input />
+    </label>
+    <label>
+      Password
+      <input type="password" />
+    </label>
+    <div>
+      <button (click)="onClickLogin(loginDialog)">
+        Login
+      </button>
+      <button (click)="loginDialog.close()">
+        Cancel
+      </button>
+    </div>
+  </div>
+</dialog>
+<dialog #signUpDialog>
+  <div>
+    <label>
+      Username
+      <input />
+    </label>
+    <label>
+      Password
+      <input type="password" />
+    </label>
+    <label>
+      Confirm Password
+      <input type="password" />
+    </label>
+    <div>
+      <button (click)="signUpDialog.close()">
+        Sign Up
+      </button>
+      <button (click)="signUpDialog.close()">
+        Cancel
+      </button>
+    </div>
+  </div>
+</dialog>

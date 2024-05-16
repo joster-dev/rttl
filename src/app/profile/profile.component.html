@@ -1,0 +1,85 @@
+<section>
+  <nav>
+    <a routerLink="/home">
+      Home
+    </a>
+  </nav>
+  <div class="content">
+    <div>
+      <h1>Application Status</h1>
+      <div>Questionnaire: Pending/Approved</div>
+      <div>Interview: Pending/Approved</div>
+      <div>Dues paid: Pending/Approved</div>
+    </div>
+    <div>
+      <small>(only Admins see this)</small>
+      <h1>User Management</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active">
+            <td>Carnic</td>
+            <td>Member</td>
+            <td>
+              <button>
+                Edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>Member</td>
+            <td>
+              <button>
+                Edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Pending</td>
+            <td>
+              <button>
+                Edit
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <small>(only Admins see this)</small>
+      <h1>Edit User</h1>
+      <div>
+        Username: Carnic
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" />
+          Questionnaire
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" />
+          Interview
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" />
+          Dues paid
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <rttl-footer [isHome]="false"></rttl-footer>
+  </div>
+</section>
