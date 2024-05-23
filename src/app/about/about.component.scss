@@ -1,11 +1,11 @@
 section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding: 0 0.5em;
-  background: url("~src/assets/dark-forest-path.jpg") no-repeat center center;
+  background: url("~src/assets/about.jpg") no-repeat center center;
   background-size: cover;
   color: white;
+  min-height: 700px;
 
   h2 {
     font-size: 3em;
@@ -16,6 +16,7 @@ section {
   }
 
   >.content {
+    margin: 3em 1em;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -23,13 +24,28 @@ section {
     align-items: center;
 
     >.text-center {
-      backdrop-filter: brightness(60%);
-      border-radius: 1em;
-      padding: 1em;
+      margin-bottom: 3em;
     }
 
-    .text>div {
-      padding: 1em 0;
+    >.dis-flex {
+      gap: 3em;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      >div {
+        flex-grow: 0;
+        flex-basis: 540px;
+
+        >div {
+          padding: 1em;
+          backdrop-filter: brightness(40%);
+          border-radius: 1em;
+
+          >div+div {
+            margin-top: 0.25em;
+          }
+        }
+      }
     }
   }
 }
