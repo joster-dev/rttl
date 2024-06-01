@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 import { OctoberEventComponent } from './october-event/october-event.component';
 import { MembershipComponent } from './membership/membership.component';
+import { MoreAboutComponent } from './more-about/more-about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MembershipComponent } from './membership/membership.component';
     AboutComponent,
     MainComponent,
     OctoberEventComponent,
-    MembershipComponent
+    MembershipComponent,
+    MoreAboutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,58 @@
+section {
+  padding: 0 .5em;
+  background: #222;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2em;
+  text-align: right;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em 0.5em;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  >div {
+    >div {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 1.25em;
+      text-align: left;
+
+      >div {
+        text-indent: 2em;
+      }
+
+      >div+div {
+        margin-top: 0.25em;
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 0.75em 0;
+}
